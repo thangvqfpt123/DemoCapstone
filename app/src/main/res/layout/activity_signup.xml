@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".SignupActivity">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+                <TextView
+                    android:id="@+id/quick_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="ĐĂNG NHẬP NHANH BẰNG"
+                    android:textColor="#686565"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.shobhitpuri.custombuttons.GoogleSignInButton
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/quick_signin"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/google_sign_in" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_below="@id/quick_signin">
+                        <!--            <com.facebook.login.widget.LoginButton-->
+                        <!--                android:id="@+id/login_button"-->
+                        <!--                android:layout_width="wrap_content"-->
+                        <!--                android:layout_height="wrap_content"-->
+                        <!--                android:visibility="gone" />-->
+
+                        <Button
+                            android:background="#3B5998"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/fb"
+                            android:textAllCaps="false"
+                            android:text="Facebook"
+                            android:textColor="#ffffff" />
+                </FrameLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/username_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:text="HOẶC TẠO TÀI KHOẢN "
+                    android:textColor="#686565"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username_signin"
+                    android:layout_marginTop="10dp"
+                    android:hint="Nhập email của bạn" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="ĐỊA CHỈ EMAIL"
+                    android:layout_below="@id/edt_email"
+                    android:textColor="#686565"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_email"
+                    android:layout_marginTop="50dp"
+                    android:hint="Nhập tên người dùng của bạn"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="TÊN NGƯỜI DÙNG"
+                    android:layout_below="@id/edt_username"
+                    android:textColor="#686565"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_username"
+                    android:layout_marginTop="50dp"
+                    android:hint="Nhập mật khẩu của bạn"
+                    android:inputType="textPassword" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="MẬT KHẨU"
+                    android:layout_below="@id/edt_password"
+                    android:textColor="#686565"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_password"
+                    android:layout_marginTop="50dp"
+                    android:hint="Xác nhận mật khẩu của bạn"
+                    android:inputType="textPassword" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="XÁC NHẬN MẬT KHẨU"
+                    android:layout_below="@id/edt_confirm_password"
+                    android:textColor="#686565"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_SignIn"
+                    android:layout_width="200dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_dos"
+                    android:text="Đăng ký"
+                    android:textColor="@android:color/white"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+        </RelativeLayout>
+
+</RelativeLayout>

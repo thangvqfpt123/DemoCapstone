@@ -2,7 +2,9 @@ package com.example.democapstone;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -15,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     //variables
     Animation topAnim, botAnim, midAnim;
     ImageView image, image2, imagefirst, imagesecond, imagethird, imagefouth;
-    TextView textView,textView2, textView3;
+    TextView textView,textView2, tvSignup;
     Button btn_signin;
 
     @Override
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         image2 = findViewById(R.id.imageView2);
         textView = findViewById(R.id.textView);
         textView2 = findViewById(R.id.textView2);
-        textView3 = findViewById(R.id.textView3);
+        tvSignup = findViewById(R.id.tv_signup);
         imagefirst = findViewById(R.id.imagefirst);
         imagesecond = findViewById(R.id.imagesecond);
         imagethird = findViewById(R.id.imagethird);
@@ -43,14 +45,29 @@ public class MainActivity extends AppCompatActivity {
         image2.setAnimation(midAnim);
         textView.setAnimation(midAnim);
         textView2.setAnimation(botAnim);
-        textView3.setAnimation(botAnim);
+        tvSignup.setAnimation(botAnim);
         btn_signin.setAnimation(botAnim);
         imagefirst.setAnimation(topAnim);
         imagesecond.setAnimation(topAnim);
         imagethird.setAnimation(topAnim);
         imagefouth.setAnimation(topAnim);
 
+        btn_signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intToSignin = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intToSignin);
+            }
+        });
 
+        tvSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intToSignup = new Intent(MainActivity.this, SignupActivity.class);
+                startActivity(intToSignup);
+            }
+        });
 
     }
+
 }
