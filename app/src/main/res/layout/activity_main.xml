@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rocksalt_regular"
+        android:text="Easy Kanji"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:id="@+id/imagefirst"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/flower1"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="500dp"/>
+
+    <ImageView
+        android:id="@+id/imagesecond"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/flower2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="500dp"/>
+
+    <ImageView
+        android:id="@+id/imagethird"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/flower3"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="500dp"/>
+
+    <ImageView
+        android:id="@+id/imagefouth"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/flower4"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="500dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="500dp"
+        android:layout_height="396dp"
+        android:src="@drawable/welcome_image2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="-50dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="396dp"
+        android:src="@drawable/welcome_image"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="157dp"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/btn_SignIn"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_dos"
+        android:fontFamily="@font/suezone_regular"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/suezone_regular"
+        android:text="Don't have an account?"
+        android:textSize="15sp"
+        android:layout_below="@id/btn_SignIn"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/suezone_regular"
+        android:text="Sign In"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="621dp"
+        android:layout_below="@id/btn_SignIn"
+        android:layout_marginLeft="255dp"
+        android:textStyle="bold"/>
+</RelativeLayout>
